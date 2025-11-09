@@ -34,12 +34,19 @@ console.log(`EXERCICE 3 -> El puntaje promedio de ${directorBuscado} es: ${prome
 
 // Exercise 4:  Alphabetic order by title 
 function orderAlphabetically(array) {
-  
+  const n = 20
+  const primerosObjetos = array.slice(0, n)
+  primerosObjetos.sort((a, b) => a.title.toLowerCase() - b.title.toLowerCase())
+  return primerosObjetos
 }
+console.log(orderAlphabetically(movies))
 
 // Exercise 5: Order by year, ascending
 function orderByYear() {
-
+  const y = 20
+  const yearObjects = array.slice(0 , y)
+  yearObjects.sort((a, b) => a.year > b.year )
+  return yearObjects
 }
 
 // Exercise 6: Calculate the average of the movies in a category
