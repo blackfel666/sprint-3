@@ -66,13 +66,15 @@ console.log(moviesAverageByCategory(movies, 'Western'))
 // Exercise 7: Modify the duration of movies to minutes
 
 function hoursToMinutes(array) {
-  let moviesDuration = array.map(movie => {
+  return array.map(movie => {
     const [hours, minutes] = movie.duration.match(/\d+/g).map(Number)
-    return (hours * 60) + (minutes || 0)
+    const totalDuration = (hours * 60) + (minutes || 0)
+    return {
+    ...movie,
+    duration: (`${totalDuration} min`)
+    }
   })
-return moviesDuration
 }
-
 console.log(hoursToMinutes(movies))
 
 // Exercise 8: Get the best film of a year
