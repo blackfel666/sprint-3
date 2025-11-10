@@ -50,14 +50,30 @@ function orderByYear() {
 }
 
 // Exercise 6: Calculate the average of the movies in a category
-function moviesAverageByCategory() {
-
+function getMoviesByGenre(array, genre) {
+  let sameGenre = array.filter(movies => movies.genre.includes(genre))
+  return sameGenre;
 }
+
+function moviesAverageByCategory(array, genre) {
+  let genreMovies = getMoviesByGenre(array, genre)
+  let scoreGenre = genreMovies.reduce((acc, movies) => acc + parseFloat(movies.score), 0)
+  let totalScore = scoreGenre / genreMovies.length
+  return totalScore.toFixed(2)
+}
+console.log(moviesAverageByCategory(movies, 'Western'))
 
 // Exercise 7: Modify the duration of movies to minutes
-function hoursToMinutes() {
 
+function hoursToMinutes(array) {
+  let moviesDuration = array.map(movie => {
+    const [hours, minutes] = movie.duration.match(/\d+/g).map(Number)
+    return (hours * 60) + (minutes || 0)
+  })
+return moviesDuration
 }
+
+console.log(hoursToMinutes(movies))
 
 // Exercise 8: Get the best film of a year
 function bestFilmOfYear() {
