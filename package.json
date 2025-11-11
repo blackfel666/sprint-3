@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "license": "UNLICENSED",
   "type": "module",
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon src/films.js",
-    "test": "jest",
-    "test:watch": "jest --watchAll --verbose=false"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll --verbose=false"
   },
   "devDependencies": {
     "jest": "^29.7.0",
