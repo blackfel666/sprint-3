@@ -35,12 +35,10 @@ SPRINT-3/
 Clone the repository and execute the following command to install the project dependencies (including Jest):
 
 ```bash
-npm install
-```
-Clone the repository:
-
-```bash
 git clone https://github.com/blackfel666/sprint-3.git
+```
+```bash
+npm install
 ```
 ---
 
