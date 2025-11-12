@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="40" failures="6" errors="0" time="0.689">
-  <testsuite name="tests\films.spec.js" errors="0" failures="6" skipped="0" timestamp="2025-11-11T12:43:34" time="0.43" tests="40">
-    <testcase classname="Function &quot;getAllDirectors&quot;" name="should be declared" time="0.004">
+<testsuites name="jest tests" tests="39" failures="4" errors="0" time="1.489">
+  <testsuite name="tests\films.spec.js" errors="0" failures="4" skipped="0" timestamp="2025-11-11T17:40:57" time="0.662" tests="39">
+    <testcase classname="Function &quot;getAllDirectors&quot;" name="should be declared" time="0.005">
     </testcase>
     <testcase classname="Function &quot;getAllDirectors&quot;" name="should return an array" time="0">
     </testcase>
     <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array, not update the original one" time="0.001">
     </testcase>
-    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array with the same length as the original one" time="0">
+    <testcase classname="Function &quot;getAllDirectors&quot;" name="should return a new array with the same length as the original one" time="0.001">
     </testcase>
-    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should be declared" time="0.001">
+    <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should be declared" time="0">
     </testcase>
     <testcase classname="Function &quot;getMoviesFromDirector&quot;" name="should return an array" time="0">
     </testcase>
@@ -19,29 +19,29 @@
     </testcase>
     <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should be declared" time="0">
     </testcase>
-    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should return a number" time="0.001">
+    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should return a number" time="0">
     </testcase>
-    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should be different from NaN" time="0">
+    <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name="should be different from NaN" time="0.001">
     </testcase>
     <testcase classname="Function &quot;moviesAverageOfDirector&quot;" name=" should return the average score of movies selecting only the director films. With 2 decimals! " time="0">
     </testcase>
     <testcase classname="Function &quot;orderAlphabetically&quot;" name="should be declared" time="0">
     </testcase>
-    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return an array" time="0.001">
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return an array" time="0">
     </testcase>
-    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should not mutate the original array" time="0.008">
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should not mutate the original array" time="0.007">
     </testcase>
-    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should only return the title of the movies, each value should be a string" time="0">
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should only return the title of the movies, each value should be a string" time="0.001">
     </testcase>
     <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return all of items when the array passed has fewer than 20 items" time="0">
     </testcase>
-    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should order them alphabetically." time="0.001">
+    <testcase classname="Function &quot;orderAlphabetically&quot;" name="should order them alphabetically." time="0">
     </testcase>
     <testcase classname="Function &quot;orderAlphabetically&quot;" name="should return the top 20 after ordering them alphabetically." time="0">
     </testcase>
     <testcase classname="Function &quot;orderByYear&quot;" name="should be declared" time="0">
     </testcase>
-    <testcase classname="Function &quot;orderByYear&quot;" name="should return an array" time="0">
+    <testcase classname="Function &quot;orderByYear&quot;" name="should return an array" time="0.001">
     </testcase>
     <testcase classname="Function &quot;orderByYear&quot;" name="should return a new array" time="0">
     </testcase>
@@ -49,141 +49,103 @@
     </testcase>
     <testcase classname="Function &quot;orderByYear&quot;" name="should return the new array in ascending order" time="0">
     </testcase>
-    <testcase classname="Function &quot;orderByYear&quot;" name="should order movies with the same year by their title, alphabetically" time="0.001">
+    <testcase classname="Function &quot;orderByYear&quot;" name="should order movies with the same year by their title, alphabetically" time="0">
     </testcase>
     <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should be declared" time="0">
     </testcase>
-    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should return a number" time="0.002">
-      <failure>Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: &quot;number&quot;
-Received: &quot;string&quot;
-    at Object.toBe (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\tests\films.spec.js:300:71)
-    at Promise.then.completed (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\utils.js:231:10)
-    at _callCircusTest (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:316:40)
-    at _runTest (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:252:3)
-    at _runTestsForDescribeBlock (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:126:9)
-    at _runTestsForDescribeBlock (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:121:9)
-    at run (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:71:3)
-    at runAndTransformResultsToJestFormat (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
-    at jestAdapter (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
-    at runTestInternal (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-runner\build\runTest.js:444:34)
-    at Object.worker (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-runner\build\testWorker.js:106:12)</failure>
+    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should return a number" time="0.001">
     </testcase>
     <testcase classname="Function &quot;moviesAverageByCategory&quot;" name="should be different from NaN" time="0">
-    </testcase>
-    <testcase classname="Function &quot;moviesAverageByCategory&quot;" name=" should return the average score of movies selecting only the director films. With 2 decimals! " time="0.001">
-      <failure>Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: 8.65
-Received: &quot;NaN&quot;
-    at Object.toBe (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\tests\films.spec.js:333:30)
-    at Promise.then.completed (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\utils.js:231:10)
-    at _callCircusTest (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:316:40)
-    at _runTest (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:252:3)
-    at _runTestsForDescribeBlock (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:126:9)
-    at _runTestsForDescribeBlock (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:121:9)
-    at run (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:71:3)
-    at runAndTransformResultsToJestFormat (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
-    at jestAdapter (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
-    at runTestInternal (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-runner\build\runTest.js:444:34)
-    at Object.worker (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-runner\build\testWorker.js:106:12)</failure>
     </testcase>
     <testcase classname="Function &quot;hoursToMinutes&quot;" name="should be declared" time="0">
     </testcase>
     <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array" time="0">
     </testcase>
-    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return a new array, not update the original one" time="0">
+    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return a new array, not update the original one" time="0.001">
     </testcase>
-    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with duration as a number" time="0.001">
+    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with duration as a number" time="0.002">
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
 Expected: &quot;number&quot;
 Received: &quot;string&quot;
-    at Object.toBe (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\tests\films.spec.js:353:55)
-    at Promise.then.completed (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\utils.js:298:28)
+    at Object.toBe (D:\DEV\Front_end\sprint-3\tests\films.spec.js:324:55)
+    at Promise.then.completed (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\utils.js:231:10)
-    at _callCircusTest (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:316:40)
-    at _runTest (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:252:3)
-    at _runTestsForDescribeBlock (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:126:9)
-    at _runTestsForDescribeBlock (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:121:9)
-    at run (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:71:3)
-    at runAndTransformResultsToJestFormat (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
-    at jestAdapter (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
-    at runTestInternal (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-runner\build\runTest.js:444:34)
-    at Object.worker (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-runner\build\testWorker.js:106:12)</failure>
+    at callAsyncCircusFn (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:316:40)
+    at _runTest (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:121:9)
+    at run (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (D:\DEV\Front_end\sprint-3\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (D:\DEV\Front_end\sprint-3\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (D:\DEV\Front_end\sprint-3\node_modules\jest-runner\build\testWorker.js:108:12)</failure>
     </testcase>
     <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with the correct duration for a 31 minute movie" time="0.001">
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
 Expected: 31
 Received: &quot;31 min&quot;
-    at Object.toBe (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\tests\films.spec.js:358:50)
-    at Promise.then.completed (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\utils.js:298:28)
+    at Object.toBe (D:\DEV\Front_end\sprint-3\tests\films.spec.js:329:50)
+    at Promise.then.completed (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\utils.js:231:10)
-    at _callCircusTest (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:316:40)
-    at _runTest (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:252:3)
-    at _runTestsForDescribeBlock (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:126:9)
-    at _runTestsForDescribeBlock (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:121:9)
-    at run (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:71:3)
-    at runAndTransformResultsToJestFormat (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
-    at jestAdapter (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
-    at runTestInternal (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-runner\build\runTest.js:444:34)
-    at Object.worker (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-runner\build\testWorker.js:106:12)</failure>
+    at callAsyncCircusFn (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:316:40)
+    at _runTest (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:121:9)
+    at run (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (D:\DEV\Front_end\sprint-3\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (D:\DEV\Front_end\sprint-3\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (D:\DEV\Front_end\sprint-3\node_modules\jest-runner\build\testWorker.js:108:12)</failure>
     </testcase>
-    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with the correct duration for a 341 minute movie" time="0">
+    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with the correct duration for a 341 minute movie" time="0.001">
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
 Expected: 341
 Received: &quot;341 min&quot;
-    at Object.toBe (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\tests\films.spec.js:363:50)
-    at Promise.then.completed (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\utils.js:298:28)
+    at Object.toBe (D:\DEV\Front_end\sprint-3\tests\films.spec.js:334:50)
+    at Promise.then.completed (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\utils.js:231:10)
-    at _callCircusTest (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:316:40)
-    at _runTest (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:252:3)
-    at _runTestsForDescribeBlock (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:126:9)
-    at _runTestsForDescribeBlock (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:121:9)
-    at run (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:71:3)
-    at runAndTransformResultsToJestFormat (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
-    at jestAdapter (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
-    at runTestInternal (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-runner\build\runTest.js:444:34)
-    at Object.worker (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-runner\build\testWorker.js:106:12)</failure>
+    at callAsyncCircusFn (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:316:40)
+    at _runTest (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:121:9)
+    at run (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (D:\DEV\Front_end\sprint-3\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (D:\DEV\Front_end\sprint-3\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (D:\DEV\Front_end\sprint-3\node_modules\jest-runner\build\testWorker.js:108:12)</failure>
     </testcase>
-    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with the correct duration for a 2 hour movie" time="0.001">
+    <testcase classname="Function &quot;hoursToMinutes&quot;" name="should return an array of movies with the correct duration for a 2 hour movie" time="0">
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
 Expected: 120
 Received: &quot;120 min&quot;
-    at Object.toBe (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\tests\films.spec.js:368:50)
-    at Promise.then.completed (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\utils.js:298:28)
+    at Object.toBe (D:\DEV\Front_end\sprint-3\tests\films.spec.js:339:50)
+    at Promise.then.completed (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\utils.js:231:10)
-    at _callCircusTest (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:316:40)
-    at _runTest (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:252:3)
-    at _runTestsForDescribeBlock (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:126:9)
-    at _runTestsForDescribeBlock (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:121:9)
-    at run (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\run.js:71:3)
-    at runAndTransformResultsToJestFormat (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
-    at jestAdapter (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
-    at runTestInternal (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-runner\build\runTest.js:444:34)
-    at Object.worker (C:\Users\Yohann\Documents\DEV\front_end\sprint-3\node_modules\jest-runner\build\testWorker.js:106:12)</failure>
+    at callAsyncCircusFn (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:316:40)
+    at _runTest (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:121:9)
+    at run (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (D:\DEV\Front_end\sprint-3\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (D:\DEV\Front_end\sprint-3\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (D:\DEV\Front_end\sprint-3\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (D:\DEV\Front_end\sprint-3\node_modules\jest-runner\build\testWorker.js:108:12)</failure>
     </testcase>
     <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should be declared" time="0">
     </testcase>
-    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return an array" time="0">
+    <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return an array" time="0.001">
     </testcase>
     <testcase classname="Function &quot;bestFilmOfYear&quot;" name="should return a new array, not update the original one" time="0">
     </testcase>

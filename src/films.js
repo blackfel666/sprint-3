@@ -47,9 +47,11 @@ function getMoviesByGenre(array, genre) {
 
 function moviesAverageByCategory(array, genre) {
   let genreMovies = getMoviesByGenre(array, genre)
-  let scoreGenre = genreMovies.reduce((acc, movies) => acc + parseFloat(movies.score), 0)
-  let totalScore = scoreGenre / genreMovies.length
-  return totalScore.toFixed(2)
+  if (genreMovies.length === 0)
+    return 0
+  let totalScoreSum = genreMovies.reduce((acc, movies) => acc + movies.score, 0);
+  let average = totalScoreSum / genreMovies.length;
+  return parseFloat(average.toFixed(2))
 }
 
 // Exercise 7: Modify the duration of movies to minutes
@@ -60,7 +62,7 @@ function hoursToMinutes(array) {
     const totalDuration = (hours * 60) + (minutes || 0)
     return {
     ...movie,
-    duration: (`${totalDuration} min`)
+    duration:`${totalDuration} min`
     }
   })
 }
