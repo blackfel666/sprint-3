@@ -1,4 +1,4 @@
-# 🎬 IT Academy - Sprint 4: Advanced JavaScript Functions (Movies Data)
+# 🎬 IT Academy - Sprint 3 : Advanced JavaScript Functions (Movies Data)
 
 ## 📝 Project Description
 
