@@ -2,7 +2,7 @@
 
 ## 📝 Project Description
 
-This project is part of the Front-End development Sprint 4. The main objective was to implement and test a set of advanced JavaScript functions using core array methods (`map`, `filter`, `reduce`, `sort`) to manipulate a movie dataset.
+This project is part of the Front-End development Sprint 3. The main objective was to implement and test a set of advanced JavaScript functions using core array methods (`map`, `filter`, `reduce`, `sort`) to manipulate a movie dataset.
 
 The work focused heavily on ensuring code **robustness**, resolving module conflicts, and creating efficient solutions with tie-breaking logic and proper error handling (`NaN`).
 
