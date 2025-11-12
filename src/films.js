@@ -62,7 +62,7 @@ function hoursToMinutes(array) {
     const totalDuration = (hours * 60) + (minutes || 0)
     return {
     ...movie,
-    duration:`${totalDuration} min`
+    duration: totalDuration
     }
   })
 }
@@ -82,15 +82,13 @@ function bestFilmOfYear(array, year) {
   return[bestMovie]
 }
 
-// The following is required to make unit tests work.
-/* Environment setup. Do not modify the below code. */
 export {
   getAllDirectors,
   getMoviesFromDirector,
   moviesAverageOfDirector,
   orderAlphabetically,
   orderByYear,
-  getMoviesByGenre, // Si es auxiliar y quieres exportarla
+  getMoviesByGenre,
   moviesAverageByCategory,
   hoursToMinutes,
   bestFilmOfYear,
